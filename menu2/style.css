@@ -1,25 +1,28 @@
 body {
   padding: 2%;
   font: 18px/1.4 sans-serif;
-  background-color: #633f71;
+  background-color: #ffffff;
 }
 nav{
   width: 100%;
+
 }
 ul {
   width: 100%;
 
+
 }
 nav a {
-  color: #fff;
+  color: #000;
   display: block;
-  padding: 0.5em 1em;
+  padding: 0.52em 1em;
   text-decoration: none;
+
 
 }
 nav a:hover {
-  color: #000;
-  background: #e9e9e9;
+  color: #fff;
+  background: #9c0101;
 }
 
 nav ul,
@@ -27,37 +30,44 @@ nav ul li {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 nav>ul {
-  background: #7f8180;
-  text-align: center;
+  color: #000;
+  background: #fff;
+
+
 }
 
 nav>ul>li {
   display: inline-block;
-  border-left: solid 1px #aaa;
+
 }
 
 nav>ul>li:first-child {
   border-left: none;
 }
 
-.sub-menu {
-  background: #7f8180;
+.sub-menu li{
+  color: #000;
+  background: #f4f4f4;
+  /*border-left: solid 2px #9c0101;*/
+  border: solid 1px #9c0101;
+
 }
 
 .sub-menu-parent {
   position: relative;
 }
 .sub-menu {
+  
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  text-align: center;
   top: 100%;
-  left: 0;
-  width:100px;
+  left: 0px;
+  width:300px;
   transform: translateY(-2em);
   z-index: -1;
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
